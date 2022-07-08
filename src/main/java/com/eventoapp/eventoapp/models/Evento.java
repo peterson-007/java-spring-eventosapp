@@ -8,7 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.*;
+
 
 
 @Entity
@@ -18,13 +19,13 @@ public class Evento implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
-	private long codigo;
-
-	@NotEmpty
-	private String nome;
+	private long codigo;	
 	
 	@NotEmpty
-	private String local;
+	private String nome;	
+	
+	@NotEmpty
+	private String local;	
 	
 	@NotEmpty
 	private String data;

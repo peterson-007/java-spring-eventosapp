@@ -20,7 +20,7 @@
 	  	<header>
 		<nav class="menu">
 		    <div class="nav-wrapper">
-		      <a href="/listaEvento" class="brand-logo">Lista de Eventos</a>
+		      <a href="/eventos" class="brand-logo">Lista de Eventos</a>
 		      <ul id="nav-mobile" class="right hide-on-med-and-down">
 		        <li><a href="/cadastrarEvento" class="waves-effect waves-light btn"><i class="material-icons left">add_circle_outline</i>Cadastrar evento</a></li>
 		      </ul>
@@ -32,14 +32,15 @@
 	  
 	  		<h1>Cadastro de Eventos</h1>
 	  		
+	  		<th:block th:include="mensagemValidacao"></th:block>
 	  		<form class="container" method="post">
 				Nome: <input type="text" value="" name="nome"/>
 				<div class="row">
 					<div class="input-field col s6">
-						Local: <input type="text" value="" name="local"/>
+						Local: <input type="text" name="local"/>
 					</div>
 					<div class="input-field col s3">
-						Data: <input type="date" value="" name="data"/>
+						Data: <input type="date" name="data"/>
 					</div>
 					<div class="input-field col s3">
 						Horario: <input type="time" value="" name="horario"/>
@@ -48,8 +49,7 @@
 				<button class="waves-effect waves-light btn" type="submit">Salvar</button>
 	
 			</form>
-	  		<button type="submit">Salvar</button>
-	  	
+	  			  	
 	  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	  </body>

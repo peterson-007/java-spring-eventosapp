@@ -13,7 +13,7 @@
 	<name>eventoapp</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>12</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -48,6 +48,12 @@
 			<version>42.2.20</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>${commons-dbcp2.version}</version>
+			<scope>compile</scope>
+		</dependency>
 
 	
 		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
@@ -72,7 +78,20 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-compiler-plugin</artifactId>
+			    <version>3.1</version>
+			    <configuration>
+			        <source>1.7</source>
+			        <target>1.7</target>
+			    </configuration>
+			</plugin>
+			
 		</plugins>
 	</build>
+	
+	
 
 </project>

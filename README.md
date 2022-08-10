@@ -7,8 +7,8 @@ https://eventosappjavaproject.herokuapp.com/
 
 
 
-Cadastrando evento:
+Cadastrando evento :
 ![](https://github.com/peterson-007/java-spring-eventosapp/blob/master/eventosapp_.gif)
 
-Cadastrando convidado:
+Cadastrando convidado :
 ![](https://github.com/peterson-007/java-spring-eventosapp/blob/master/eventosapp_%20(1).gif)
